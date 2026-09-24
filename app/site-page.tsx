@@ -13,18 +13,12 @@ const WHATSAPP_NUMBER = "5583996261313";
 const MAP_URL = "https://maps.apple/p/39mq4P-Xu9vMbi";
 
 const messages = {
-  avaliacao:
-    "Olá, Dr. Yuri! Conheci seu trabalho pelo site e gostaria de agendar uma avaliação.",
-  facetas:
-    "Olá, Dr. Yuri! Vi seu trabalho com facetas em resina pelo site e gostaria de saber mais sobre uma avaliação.",
-  ortodontia:
-    "Olá, Dr. Yuri! Vi as opções de ortodontia no site e gostaria de saber mais.",
-  clareamento:
-    "Olá, Dr. Yuri! Vi as informações sobre clareamento dental no site e gostaria de saber mais.",
-  proteses:
-    "Olá, Dr. Yuri! Vi as informações sobre próteses no site e gostaria de saber mais.",
-  extracoes:
-    "Olá, Dr. Yuri! Vi as informações sobre extrações no site e gostaria de saber mais.",
+  avaliacao: "Olá, Dr. Yuri! Gostaria de agendar uma avaliação.",
+  facetas: "Olá, Dr. Yuri! Gostaria de agendar uma avaliação.",
+  ortodontia: "Olá, Dr. Yuri! Gostaria de agendar uma avaliação.",
+  clareamento: "Olá, Dr. Yuri! Gostaria de agendar uma avaliação.",
+  proteses: "Olá, Dr. Yuri! Gostaria de agendar uma avaliação.",
+  extracoes: "Olá, Dr. Yuri! Gostaria de agendar uma avaliação.",
 };
 
 function whatsappUrl(message: string) {
@@ -154,18 +148,24 @@ function BeforeAfter({
 const treatments = [
   {
     number: "01",
-    title: "Clareamento dental",
+    title: "Facetas em resina",
+    copy: "Converse sobre facetas em resina e as possibilidades para o seu sorriso.",
+    message: messages.facetas,
+  },
+  {
+    number: "02",
+    title: "Clareamento Dental",
     copy: "Uma conversa sobre tonalidade, expectativas e as possibilidades adequadas para o seu sorriso.",
     message: messages.clareamento,
   },
   {
-    number: "02",
+    number: "03",
     title: "Próteses",
     copy: "Planejamento voltado à recuperação do sorriso, considerado a partir das necessidades de cada caso.",
     message: messages.proteses,
   },
   {
-    number: "03",
+    number: "04",
     title: "Extrações",
     copy: "Avaliação cuidadosa e orientação clara sobre a indicação e os próximos passos do atendimento.",
     message: messages.extracoes,
